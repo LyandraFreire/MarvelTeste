@@ -11,7 +11,7 @@ data class DataModel(
 
 data class ResultModel(
     val id: String,
-    val title: String,
+    val name: String,
     val description: String?,
     val thumbnail: ThumbnailModel
 )

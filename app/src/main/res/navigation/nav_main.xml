@@ -5,16 +5,25 @@
     android:id="@+id/nav_main"
     app:startDestination="@id/FragmentSplash">
 
-    <fragment
-        android:id="@+id/FragmentHome"
-        android:name="com.example.marveltestitau.presetation.scenes.home.HomeFragment"
-        tools:layout="@layout/fragment_home" >
-    </fragment>
 
     <fragment
         android:id="@+id/FragmentSplash"
         android:name="com.example.marveltestitau.presetation.scenes.splash.SplashFragment"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_FragmentSplash_to_FragmentHome"
+            app:destination="@id/FragmentHome" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentHome"
+        android:name="com.example.marveltestitau.presetation.scenes.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_FragmentHome_to_FragmentCharacterDetails"
+            app:destination="@id/FragmentCharacterDetails" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/FragmentCharacterDetails"

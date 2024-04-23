@@ -5,5 +5,8 @@ import kotlinx.coroutines.flow.Flow
 
 interface CharactersRepository {
 
-    fun getCharacters(): Flow<List<Characters>>
+    fun getCharacters(
+        apiKey: String,
+        timestamp: String,
+        hash: String): Flow<List<Characters>>
 }

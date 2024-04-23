@@ -7,7 +7,11 @@ import kotlinx.coroutines.flow.Flow
 class CharactersRepositoryImpl(private val charactersDataSource: CharactersDataSource) :
     CharactersRepository {
 
-    override fun getCharacters(): Flow<List<Characters>> {
-        return charactersDataSource.getCharacters()
+    override fun getCharacters(
+        apiKey: String,
+        timestamp: String,
+        hash: String
+    ): Flow<List<Characters>> {
+        return charactersDataSource.getCharacters(apiKey, timestamp, hash)
     }
 }

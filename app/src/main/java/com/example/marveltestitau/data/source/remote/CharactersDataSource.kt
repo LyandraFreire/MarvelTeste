@@ -4,5 +4,9 @@ import com.example.marveltestitau.data.model.Characters
 import kotlinx.coroutines.flow.Flow
 
 interface CharactersDataSource {
-    fun getCharacters(): Flow<List<Characters>>
+    fun getCharacters(
+        apiKey: String,
+        timestamp: String,
+        hash: String
+    ): Flow<List<Characters>>
 }

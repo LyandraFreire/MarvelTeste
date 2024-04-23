@@ -4,9 +4,10 @@ import com.example.marveltestitau.data.model.Characters
 import com.example.marveltestitau.data.repository.CharactersRepository
 import kotlinx.coroutines.flow.Flow
 
-class GetCharactersUseCaseImpl(private val charactersRepository: CharactersRepository): GetCharactersUseCase {
+class GetCharactersUseCaseImpl(private val charactersRepository: CharactersRepository) :
+    CharactersUseCase {
 
-    override fun invoke(): Flow<List<Characters>> {
-        return charactersRepository.getCharacters()
+    override fun invoke(apiKey: String, timestamp: String, hash: String): Flow<List<Characters>> {
+        return charactersRepository.getCharacters(apiKey, timestamp, hash)
     }
 }

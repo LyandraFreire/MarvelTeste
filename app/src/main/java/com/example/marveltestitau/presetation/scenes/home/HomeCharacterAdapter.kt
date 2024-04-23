@@ -2,15 +2,15 @@ package com.example.marveltestitau.presetation.scenes.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.marveltestitau.data.model.Characters
 import com.example.marveltestitau.databinding.ItemListHeroBinding
 
-class HomeCharacterAdapter(private var characters: List<Characters>) :
-    RecyclerView.Adapter<HomeCharacterAdapter.CharactersViewHolder>() {
 
+class HomeCharacterAdapter(
+    private var characters: List<Characters>
+) : RecyclerView.Adapter<HomeCharacterAdapter.CharactersViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
         val binding =
@@ -26,16 +26,16 @@ class HomeCharacterAdapter(private var characters: List<Characters>) :
 
     inner class CharactersViewHolder(private val binding: ItemListHeroBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(characters: Characters) {
+        fun bind(character: Characters) {
             with(binding) {
                 Glide.with(root)
-                    .load(characters.image)
+                    .load(character.image)
                     .centerCrop()
-                    .into(imgListPhoto as ImageView)
+                    .into(imgListPhoto)
 
-                txtNameHero.text = characters.name
-
+                txtNameHero.text = character.name
             }
         }
     }
 }
+
