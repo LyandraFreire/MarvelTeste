@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/FragmentSplash">
+
+    <fragment
+        android:id="@+id/FragmentHome"
+        android:name="com.example.marveltestitau.presetation.scenes.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentSplash"
+        android:name="com.example.marveltestitau.presetation.scenes.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash" />
+
+    <fragment
+        android:id="@+id/FragmentCharacterDetails"
+        android:name="com.example.marveltestitau.presetation.scenes.characterDetails.CharacterDetailsFragment"
+        tools:layout="@layout/fragment_character_details" />
+</navigation>

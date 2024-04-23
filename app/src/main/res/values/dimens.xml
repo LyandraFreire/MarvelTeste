@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Font Sizes-->
+    <dimen name="font_size_Title">20sp</dimen>
+    <dimen name="font_size_Sub_Title">18sp</dimen>
+    <dimen name="font_size_text">16sp</dimen>
+
+    <!--Border Width-->
+    <dimen name="border_width_none">0dp</dimen>
+    <dimen name="border_width_hairline">1dp</dimen>
+    <dimen name="border_width_thin">2dp</dimen>
+    <dimen name="border_width_thick">4dp</dimen>
+
+</resources>
