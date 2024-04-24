@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Marvel</string>
     <string name="list_character">Confira a Lista</string>
-    <string name="wellcome">Bem vindo(a)</string>
+    <string name="wellcome">Bem Vindo(a)</string>
     <string name="fiction_name">Fiction Name</string>
     <string name="description_name">Sem Descrição</string>
-    <string name="wellcome_text">Conheça detalhes sobre seus personagens favoritos, explore e descubra novos mundos de herois, vilões, anti-herois ou organizações para acompanho-los em suas aventuras.</string>
+    <string name="wellcome_text">Conheça detalhes sobre seus personagens favoritos, explore e descubra novas origens de heróis, vilões, anti-heróis ou organizações para acompanhá-los em suas aventuras</string>
 
 
     <!-- Error messages -->

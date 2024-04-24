@@ -31,7 +31,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_margin="15dp"
-            android:background="@drawable/border_circule"
+            android:background="@drawable/border_circle"
             android:clipToOutline="true"
             android:foreground="@drawable/rounded_mask"
             android:largeHeap="true"

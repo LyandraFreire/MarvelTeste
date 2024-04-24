@@ -8,6 +8,6 @@ fun ResultModel.toCharacter(): Characters {
         id = this.id,
         image = "${thumbnail.path}.${thumbnail.extension}",
         name = this.name,
-        description = this.description ?: "Sem descrição"
+        description = this.description
     )
 }
