@@ -47,9 +47,7 @@ fun provideComicApi(retrofit: Retrofit): Api {
 }
 
 val viewModelModule = module {
-    viewModel { CharacterDetailsViewModel() }
+    viewModel { CharacterDetailsViewModel(get()) }
     viewModel { HomeViewModel(get()) }
     viewModel { SplashViewModel() }
-    viewModel { CharacterDetailsViewModel() }
-
 }

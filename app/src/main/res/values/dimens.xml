@@ -4,7 +4,7 @@
     <!--Font Sizes-->
     <dimen name="font_size_Title">20sp</dimen>
     <dimen name="font_size_Sub_Title">18sp</dimen>
-    <dimen name="font_size_text">16sp</dimen>
+    <dimen name="font_size_text">15sp</dimen>
 
     <!--Border Width-->
     <dimen name="border_width_none">0dp</dimen>

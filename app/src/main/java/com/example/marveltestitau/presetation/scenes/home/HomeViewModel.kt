@@ -1,7 +1,5 @@
 package com.example.marveltestitau.presetation.scenes.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.marveltestitau.data.model.Characters
@@ -20,6 +18,9 @@ class HomeViewModel(private val charactersUseCase: CharactersUseCase) : ViewMode
 
     private val _error = MutableSharedFlow<Unit?>()
     val error = _error.asSharedFlow()
+
+    private val _event = MutableStateFlow<List<Characters>>(emptyList())
+    val event: StateFlow<List<Characters>> = _event
 
     fun getCharacters() {
         viewModelScope.launch(Dispatchers.IO) {

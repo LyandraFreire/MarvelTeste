@@ -12,21 +12,31 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_FragmentSplash_to_FragmentHome"
-            app:destination="@id/FragmentHome" />
+            app:destination="@id/FragmentHomeNav" />
     </fragment>
 
     <fragment
-        android:id="@+id/FragmentHome"
+        android:id="@+id/FragmentHomeNav"
         android:name="com.example.marveltestitau.presetation.scenes.home.HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_FragmentHome_to_FragmentCharacterDetails"
-            app:destination="@id/FragmentCharacterDetails" />
+            app:destination="@id/FragmentCharacterDetailsNav" />
     </fragment>
 
 
     <fragment
-        android:id="@+id/FragmentCharacterDetails"
+        android:id="@+id/FragmentCharacterDetailsNav"
         android:name="com.example.marveltestitau.presetation.scenes.characterDetails.CharacterDetailsFragment"
-        tools:layout="@layout/fragment_character_details" />
+        tools:layout="@layout/fragment_character_details" >
+        <argument
+            android:name="characterName"
+            app:argType="string" />
+        <argument
+            android:name="characterPhotoUrl"
+            app:argType="string" />
+        <argument
+            android:name="characterDescription"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -25,7 +25,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 
     }
 
-
     private fun showCharactersList(characters: List<Characters>) {
         with(binding) {
             txtErrorList.visibility = View.GONE
@@ -49,6 +48,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 if (error != null) {
                     showError()
                 }
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.event.collectLatest { event ->
+
+
             }
         }
     }

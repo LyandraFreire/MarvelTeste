@@ -5,6 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_marvel_logo"/>
+
+    </Toolbar>
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
         android:layout_width="match_parent"
@@ -18,7 +35,7 @@
                 android:id="@+id/title_wellcome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="90dp"
                 android:gravity="center"
                 android:text="@string/wellcome"
                 android:textSize="@dimen/font_size_Title"
@@ -30,13 +47,14 @@
                 android:id="@+id/txt_wellcome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="35dp"
+                android:layout_margin="30dp"
+                android:layout_marginTop="45dp"
                 android:gravity="center"
                 android:text="@string/wellcome_text"
                 android:textSize="@dimen/font_size_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/title_wellcome" />
+                app:layout_constraintTop_toBottomOf="@+id/title_wellcome" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcy_character_home"

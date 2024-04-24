@@ -7,8 +7,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cnst_item_hero"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="10dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
@@ -29,6 +29,7 @@
             android:id="@+id/img_list_photo"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:largeHeap="true"
             android:layout_margin="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
