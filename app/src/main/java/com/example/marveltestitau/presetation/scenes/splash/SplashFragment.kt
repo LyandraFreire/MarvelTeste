@@ -8,15 +8,19 @@ import com.example.marveltestitau.R
 import com.example.marveltestitau.base.BaseFragment
 import com.example.marveltestitau.databinding.FragmentSplashBinding
 import com.example.marveltestitau.presetation.MainActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
-    private val SPLASH_DELAY: Long = 3000
+    private val SPLASH_DELAY: Long = 4000
 
+    private val viewModel: SplashViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel.getCharacters()
+
         Handler(Looper.getMainLooper()).postDelayed({
-            (activity as MainActivity).navController.navigate(R.id.FragmentHomeNav)
+            (activity as MainActivity).navController.navigate(R.id.fragmentHomeNav)
         }, SPLASH_DELAY)
     }
 }

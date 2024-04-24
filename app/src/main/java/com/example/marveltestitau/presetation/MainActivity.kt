@@ -20,4 +20,8 @@ class MainActivity : FragmentActivity() {
         navController = navHostFragment.navController
 
     }
+
+    override fun onBackPressed() {
+
+    }
 }

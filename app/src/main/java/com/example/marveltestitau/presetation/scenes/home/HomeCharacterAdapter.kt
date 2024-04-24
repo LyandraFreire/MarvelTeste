@@ -9,7 +9,8 @@ import com.example.marveltestitau.databinding.ItemListHeroBinding
 
 
 class HomeCharacterAdapter(
-    private var characters: List<Characters>
+    private val characters: List<Characters>,
+    private val onClickListener: (Characters) -> Unit
 ) : RecyclerView.Adapter<HomeCharacterAdapter.CharactersViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
@@ -34,6 +35,8 @@ class HomeCharacterAdapter(
                     .into(imgListPhoto)
 
                 txtNameHero.text = character.name
+
+                root.setOnClickListener {onClickListener.invoke(character) }
             }
         }
     }

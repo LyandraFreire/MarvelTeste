@@ -3,40 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/FragmentSplash">
+    app:startDestination="@id/fragmentSplash">
 
 
     <fragment
-        android:id="@+id/FragmentSplash"
+        android:id="@+id/fragmentSplash"
         android:name="com.example.marveltestitau.presetation.scenes.splash.SplashFragment"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_FragmentSplash_to_FragmentHome"
-            app:destination="@id/FragmentHomeNav" />
+            app:destination="@id/fragmentHomeNav" />
     </fragment>
 
     <fragment
-        android:id="@+id/FragmentHomeNav"
+        android:id="@+id/fragmentHomeNav"
         android:name="com.example.marveltestitau.presetation.scenes.home.HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_FragmentHome_to_FragmentCharacterDetails"
-            app:destination="@id/FragmentCharacterDetailsNav" />
+            app:destination="@id/fragmentCharacterDetailsNav" />
     </fragment>
 
 
     <fragment
-        android:id="@+id/FragmentCharacterDetailsNav"
+        android:id="@+id/fragmentCharacterDetailsNav"
         android:name="com.example.marveltestitau.presetation.scenes.characterDetails.CharacterDetailsFragment"
         tools:layout="@layout/fragment_character_details" >
-        <argument
-            android:name="characterName"
-            app:argType="string" />
-        <argument
-            android:name="characterPhotoUrl"
-            app:argType="string" />
-        <argument
-            android:name="characterDescription"
-            app:argType="string" />
+        <action
+            android:id="@+id/action_FragmentCharacterDetailsNav_to_FragmentHomeNav"
+            app:destination="@id/fragmentHomeNav" />
     </fragment>
 </navigation>
