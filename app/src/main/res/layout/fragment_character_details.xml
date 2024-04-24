@@ -48,6 +48,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/fiction_name"
         android:textSize="@dimen/font_size_Title"
+        android:textColor="@color/lb_default_brand_color_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_profile_character" />

@@ -38,6 +38,7 @@
                 android:layout_marginTop="90dp"
                 android:gravity="center"
                 android:text="@string/wellcome"
+                android:textColor="@color/lb_default_brand_color_dark"
                 android:textSize="@dimen/font_size_Title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -56,15 +57,29 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title_wellcome" />
 
+            <TextView
+                android:id="@+id/txt_HQS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="start"
+                android:text="@string/list_character"
+                android:textColor="@color/lb_default_brand_color_dark"
+                android:textSize="@dimen/font_size_Sub_Title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_wellcome" />
+
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcy_character_home"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="35dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_wellcome" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_HQS" />
 
             <TextView
                 android:id="@+id/txt_error_list"
