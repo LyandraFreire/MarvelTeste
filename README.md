@@ -1,5 +1,3 @@
-Claro, aqui está o texto corrigido:
-
 # Projeto Marvel Teste
 
 Este é um projeto que consiste na utilização da API Marvel (https://developer.marvel.com/documentation/getting_started), utilizando a chamada de personagens (Characters).
