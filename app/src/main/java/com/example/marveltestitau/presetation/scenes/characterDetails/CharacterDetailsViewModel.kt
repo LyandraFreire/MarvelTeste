@@ -20,9 +20,4 @@ class CharacterDetailsViewModel(private val charactersUseCase: CharactersUseCase
     val detalhesItem: LiveData<Characters> = _detalhesItem
 
 
-    fun getCharacterDetails(itemId: String) {
-
-
-    }
-
 }
