@@ -10,5 +10,5 @@
     <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
-    <string name="list_caracters_error">Desculpa ocorreu um erro</string>
+    <string name="list_caracters_error">Desculpa,ocorreu um erro</string>
 </resources>
