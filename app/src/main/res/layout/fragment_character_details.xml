@@ -14,10 +14,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="100dp"
+            android:layout_width="95dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:background="@drawable/ic_marvel_logo" />
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="start"
+                android:background="@drawable/ic_back" />
 
     </Toolbar>
 

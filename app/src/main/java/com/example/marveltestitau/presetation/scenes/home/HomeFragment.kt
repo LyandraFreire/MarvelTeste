@@ -37,8 +37,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 bundle.putSerializable(CHARACTER, it)
                 findNavController().navigate(
                     R.id.action_FragmentHome_to_FragmentCharacterDetails,
-                    bundle
-                )
+                    bundle)
 
             }
             rcyCharacterHome.layoutManager = LinearLayoutManager(context)
