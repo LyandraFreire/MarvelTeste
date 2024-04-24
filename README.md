@@ -28,6 +28,7 @@ A aplicação foi pensada para ser simples, sem muita poluição ou informação
 
 ## Adendos
 
+Recomendo o uso de celular para rodar, o emulador virtual que o android fornece vaza as fotos de suas bordas porem isso não ocorro em dispositivos fisicos.
 O projeto deveria ter uma branch master e dela vir branches com partes separadas do código e commits especificando se é uma fix, chore, feat ou refactor, porém com problemas internos do meu setup, não pude organizar melhor.
 Esse projeto não contém testes unitários por contratempos pessoais e devido a falhas do meu setup que atrapalharam a entrega no prazo.
 
