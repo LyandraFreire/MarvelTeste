@@ -23,6 +23,5 @@ class CharactersDataSourceImpl(private val api: Api) : CharactersDataSource {
         } catch (e: Exception) {
             emit(emptyList())
         }
-
     }
 }

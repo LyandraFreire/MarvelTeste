@@ -7,18 +7,18 @@ import com.example.marveltestitau.base.BaseFragment
 import com.example.marveltestitau.data.model.Characters
 import com.example.marveltestitau.databinding.FragmentCharacterDetailsBinding
 
-import org.koin.androidx.viewmodel.ext.android.viewModel
+class CharacterDetailsFragment :
+    BaseFragment<FragmentCharacterDetailsBinding>(FragmentCharacterDetailsBinding::inflate) {
 
-class CharacterDetailsFragment: BaseFragment<FragmentCharacterDetailsBinding>(FragmentCharacterDetailsBinding::inflate) {
-
-    private val viewModel: CharacterDetailsViewModel by viewModel()
-
+    companion object {
+        const val CHARACTER = "character"
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getCharacterDetails(arguments?.getSerializable("CHARACTER") as Characters)
+        getCharacterDetails(arguments?.getSerializable(CHARACTER) as Characters)
     }
 
-    fun getCharacterDetails(characters: Characters) {
+    private fun getCharacterDetails(characters: Characters) {
 
         binding.txtNameCharacterDetails.text = characters.name
         binding.txtCharacterDetails.text = characters.description

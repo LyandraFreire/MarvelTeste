@@ -7,9 +7,7 @@ import com.example.marveltestitau.data.source.remote.CharactersDataSource
 import com.example.marveltestitau.data.source.remote.CharactersDataSourceImpl
 import com.example.marveltestitau.domain.usecase.CharactersUseCase
 import com.example.marveltestitau.domain.usecase.GetCharactersUseCaseImpl
-import com.example.marveltestitau.presetation.scenes.characterDetails.CharacterDetailsViewModel
 import com.example.marveltestitau.presetation.scenes.home.HomeViewModel
-import com.example.marveltestitau.presetation.scenes.splash.SplashViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -47,7 +45,5 @@ fun provideComicApi(retrofit: Retrofit): Api {
 }
 
 val viewModelModule = module {
-    viewModel { CharacterDetailsViewModel(get()) }
     viewModel { HomeViewModel(get()) }
-    viewModel { SplashViewModel(get()) }
 }

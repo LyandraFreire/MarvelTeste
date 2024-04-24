@@ -14,8 +14,6 @@ import kotlinx.coroutines.launch
 class HomeViewModel(private val charactersUseCase: CharactersUseCase) : ViewModel() {
 
 
-    private var onBackPressed: () -> Unit = {}
-
     private val _character = MutableStateFlow<List<Characters>>(emptyList())
     val characters: StateFlow<List<Characters>> = _character
 
@@ -40,10 +38,4 @@ class HomeViewModel(private val charactersUseCase: CharactersUseCase) : ViewMode
             }
         }
     }
-
-    fun setOnBackPressed(callback: () -> Unit) {
-        onBackPressed = callback
-    }
-
-    fun onBackPressed() = onBackPressed.invoke()
 }
